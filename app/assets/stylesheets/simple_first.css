@@ -34,52 +34,41 @@ a {
   color: #3b4043;
 }
 
-/* ヘッダー */
+/* header */
 
-.header {
-  background-color: #f1f8fe;
-  margin-bottom: 48px;
-  padding: 20px 0;
-}
-.nav {
-  font-size: 18px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 100%;
-  padding: 1vh 0;
-}
-.lists-left {
+.sight_name {
   display: flex;
   min-width: 200px;
+  font-size: 40px;
+  justify-content:space-between
 }  
+
+.sight_sub_name {
+  display: flex;
+  min-width: 150px;
+  font-size: 20px;
+  justify-content:space-around
+}  
+
+.lists-center {
+  display: flex;
+  list-style: none;
+  font-size: 20px;
+  justify-content: center;
+  margin-right: 2ex;
+}
+
 .lists-right {
     display: flex;
     list-style: none;
-    align-items: flex-end;
+    font-size: 20px;
+    justify-content:flex-end;
 }
-.inner {
-  width: 1024px;
-  margin: 0 auto;
-  font-size: 2.4em;
-}
-.inner_left {
-  margin: 0 auto;
-  font-size: 0.8em;
-}
-.top {
-  width: 1000x;
-  display: flex;
-  justify-content: space-between;
-}
+
 .logo {
-  width: 2000px;
+  width: 1500px;
 }  
-.simplism {
-  display: flex;
-  list-style: none;
-  align-items: flex-end;
-}
+
 .user-nickname {
   text-decoration: none; 
   margin-right: 3vw;
@@ -95,7 +84,7 @@ a {
 
 .login {
   text-decoration: none;
-  line-height: 32px;
+  line-height: 3px;
   margin-right: 3vw;
   color: #333333;
 }
