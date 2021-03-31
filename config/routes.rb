@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  root to: 'simple_first#index'
-  
+  devise_for :users
+  root to: 'simple_first#index'  
 end
