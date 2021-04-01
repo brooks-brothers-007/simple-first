@@ -39,23 +39,38 @@ a {
 .sight_name {
   display: flex;
   min-width: 200px;
-  font-size: 40px;
-  justify-content:space-between
-}  
-
-.sight_sub_name {
-  display: flex;
-  min-width: 150px;
-  font-size: 20px;
-  justify-content:space-around
+  font-size: 45px;
+  justify-content:space-between;
+  color: #777777;
 }  
 
 .lists-center {
   display: flex;
   list-style: none;
-  font-size: 20px;
-  justify-content: center;
-  margin-right: 2ex;
+  font-size: 25px;
+  justify-content: space-around;
+  /* margin-right: 2ex; */
+}
+
+.size {
+  text-decoration: none;
+  line-height: 3px;
+  margin-right: 3vw;
+  color: #333333;
+}
+
+.category {
+  text-decoration: none;
+  line-height: 3px;
+  margin-right: 3vw;
+  color: #333333;
+}
+
+.brand {
+  text-decoration: none;
+  line-height: 3px;
+  margin-right: 3vw;
+  color: #333333;
 }
 
 .lists-right {
@@ -65,21 +80,11 @@ a {
     justify-content:flex-end;
 }
 
-.logo {
-  width: 1500px;
-}  
-
 .user-nickname {
   text-decoration: none; 
   margin-right: 3vw;
   color: #333333;
   font-weight: bold;
-}
-
-
-.logout {
-  text-decoration: none;
-  color: #333333;
 }
 
 .login {
@@ -89,7 +94,16 @@ a {
   color: #333333;
 }
 
+.logout {
+  text-decoration: none;
+  color: #333333;
+}
+
 .sign-up {
   text-decoration: none;
   color: #333333;
 }
+
+.logo {
+  width: 1500px;
+}  

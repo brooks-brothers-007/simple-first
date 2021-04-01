@@ -14,8 +14,9 @@
   <header>
     <div class="sight_name"> 
       <b>
-        <%= link_to "Simplism", class: :sight_name%>
+        <%= link_to "Simplism" %>
       </b>
+<<<<<<< Updated upstream
       <div class='lists-right'>
         <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
         <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
@@ -24,10 +25,23 @@
 
      <div class="sight_sub_name"> 
       <%= link_to "MySize ASSIST", class: :size%>
+=======
+    </div> 
+    
+    <ul class='lists-center'>
+    <b>
+      <li><%= link_to "MySize ASSIST", class: :size %></li>
+>>>>>>> Stashed changes
       <li><%= link_to 'カテゴリー', class: :category %></li>
       <li><%= link_to 'ブランド', class: :brand %></li> 
-    </div>     
+    </b>  
+    </ul>  
 
+    <ul class='lists-right'>
+      <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
+      <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
+    </ul> 
+        
     <div class="top">
       <%= link_to image_tag("top.png", class: :logo), root_path %> 
     </div>  
