@@ -54,8 +54,10 @@ a {
   display: flex;
   list-style: none;
   font-size: 20px;
+  margin-right: 3ex;
+  margin-left: 3ex;
+  margin-top: 3ex;
   justify-content: space-around;
-  margin-right: 2ex;
 }
 
 .lists-right {
@@ -98,37 +100,42 @@ h1{
   text-align: center;
 }
 
-.post{
+.my_size{
   display: block;
   width: 150px;
-  padding: 10px;
-  border: 1px solid white;
-  background-color: orange;
-  color: white;
+  padding: 15px;
+  border: 2px solid white;
+  background-color: #EEEEEE	;
+  color: black;
   text-decoration: none;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 20px;
 }
 
-.article{
-  height:200px;
-  background-color:lightgray;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  border: 1px solid #fff;
-  padding: 20px;
+.category{
+  display: block;
+  width: 150px;
+  padding: 15px;
+  border: 2px solid white;
+  background-color: #CCCCCC	;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
-.article-category{
-  font-size: 16px;
-  border: 1px solid;
-  padding: 5px;
-  background-color: lightblue;
+.brand{
+  display: block;
+  width: 150px;
+  padding: 15px;
+  border: 2px solid white;
+  background-color: #555555	;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
-.article-title{
-  font-size: 20px;
-  font-weight: bold;
-}
