@@ -1,8 +1,0 @@
-<%= form_with model: @article, url:simple_first_path, local: true do |f| %>
-  <div class="article-box">
-    <%= f.text_field :title, class:"title", placeholder:"タイトル" %>
-    <%= f.text_area :text, class:"text", placeholder:"テキスト" %>
-    <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"category-select"}) %>
-    <%= f.submit "カテゴリー" ,class:"btn" %>
-  </div>
-<% end %>
