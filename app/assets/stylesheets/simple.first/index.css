@@ -54,14 +54,14 @@ a {
   display: flex;
   list-style: none;
   font-size: 20px;
-  justify-content: center;
+  justify-content: space-around;
   margin-right: 2ex;
 }
 
 .lists-right {
     display: flex;
     list-style: none;
-    font-size: 20px;
+    font-size: 15px;
     justify-content:flex-end;
 }
 
@@ -92,4 +92,43 @@ a {
 .sign-up {
   text-decoration: none;
   color: #333333;
+}
+
+h1{
+  text-align: center;
+}
+
+.post{
+  display: block;
+  width: 150px;
+  padding: 10px;
+  border: 1px solid white;
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.article{
+  height:200px;
+  background-color:lightgray;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #fff;
+  padding: 20px;
+}
+
+.article-category{
+  font-size: 16px;
+  border: 1px solid;
+  padding: 5px;
+  background-color: lightblue;
+}
+
+.article-title{
+  font-size: 20px;
+  font-weight: bold;
 }
