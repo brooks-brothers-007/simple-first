@@ -1,0 +1,141 @@
+/* リセットCSS */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+ul,
+li,
+h1,
+h2,
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN W3", sans-serif;
+  color: #3b4043;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+  color: #3b4043;
+}
+
+/* header */
+
+.sight_name {
+  display: flex;
+  min-width: 200px;
+  font-size: 40px;
+  justify-content:space-between
+}  
+
+.sight_sub_name {
+  display: flex;
+  min-width: 150px;
+  font-size: 20px;
+  justify-content:space-around
+}  
+
+.lists-center {
+  display: flex;
+  list-style: none;
+  font-size: 20px;
+  margin-right: 3ex;
+  margin-left: 3ex;
+  margin-top: 3ex;
+  justify-content: space-around;
+}
+
+.lists-right {
+    display: flex;
+    list-style: none;
+    font-size: 15px;
+    justify-content:flex-end;
+}
+
+.logo {
+  width: 1500px;
+}  
+
+.user-nickname {
+  text-decoration: none; 
+  margin-right: 3vw;
+  color: #333333;
+  font-weight: bold;
+}
+
+
+.logout {
+  text-decoration: none;
+  color: #333333;
+}
+
+.login {
+  text-decoration: none;
+  line-height: 3px;
+  margin-right: 3vw;
+  color: #333333;
+}
+
+.sign-up {
+  text-decoration: none;
+  color: #333333;
+}
+
+h1{
+  text-align: center;
+}
+
+.my_size{
+  display: block;
+  width: 150px;
+  padding: 15px;
+  border: 2px solid white;
+  background-color: #EEEEEE	;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.category{
+  display: block;
+  width: 150px;
+  padding: 15px;
+  border: 2px solid white;
+  background-color: #CCCCCC	;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.brand{
+  display: block;
+  width: 150px;
+  padding: 15px;
+  border: 2px solid white;
+  background-color: #555555	;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
