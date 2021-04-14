@@ -1,6 +1,10 @@
 class SimpleFirstController < ApplicationController
   def index
-    render '/index' 
-    # app/views/index.html.erbなら‘/index’ renderでviewファイルの呼び出しが可能
+    @articles = Article.order("created_at DESC")
   end 
+
+  def new
+    @article = Article.new
+  end
+
 end

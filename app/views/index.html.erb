@@ -17,16 +17,18 @@
   <header>
     <div class="sight_name"> 
       <b>
-        <%= link_to "Simplism", class: :sight_name%>
+        <%= link_to "Simplism" %>
       </b>
+
       <div class='lists-right'>
-        <li><%= link_to 'ログイン', class: "login" %></li>
-        <li><%= link_to '新規登録', class: "sign-up" %></li>
+        <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
+        <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
       </div> 
     </div>
 
      <div class="sight_sub_name"> 
       <%= link_to "MySize ASSIST", class: :size%>
+
       <%= link_to 'カテゴリー', class: :category %>
       <ul class="category hidden" id="pull-down">
         <li>リスト1</li>
@@ -36,7 +38,25 @@
       </ul>
       <%= link_to 'ブランド', class: :brand %>
     </div>     
+=======
+=======
+    </div> 
+    
+    <ul class='lists-center'>
+    <b>
+      <li><%= link_to "MySize ASSIST", class: :size %></li>
+ 
+      <li><%= link_to 'カテゴリー', class: :category %></li>
+      <li><%= link_to 'ブランド', class: :brand %></li> 
+    </b>  
+    </ul>  
 
+
+    <ul class='lists-right'>
+      <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
+      <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
+    </ul> 
+        
     <div class="top">
       <%= link_to image_tag("top.png", class: :logo), root_path %> 
     </div>  
