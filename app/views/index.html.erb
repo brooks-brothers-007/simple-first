@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="simple_first.css">
+    <%# CSSを読み込む記述 %>
+    <script src="index.js"></script>
+    <%# JavaScriptを読み込む記述 %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simplism</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+       <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700,900&display=swap" rel="stylesheet">
+  </head>
+
+  <header>
+    <div class="sight_name"> 
+      <b>
+        <%= link_to "Simplism" %>
+      </b>
+
+      <div class='lists-right'>
+        <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
+        <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
+      </div> 
+    </div>
+
+     <div class="sight_sub_name"> 
+      <%= link_to "MySize ASSIST", class: :size%>
+
+      <%= link_to 'カテゴリー', class: :category %>
+      <ul class="category hidden" id="pull-down">
+        <li>リスト1</li>
+        <li>リスト2</li>
+        <li>リスト3</li>
+        <li>リスト4</li>
+      </ul>
+      <%= link_to 'ブランド', class: :brand %>
+    </div>     
+=======
+=======
+    </div> 
+    
+    <ul class='lists-center'>
+    <b>
+      <li><%= link_to "MySize ASSIST", class: :size %></li>
+ 
+      <li><%= link_to 'カテゴリー', class: :category %></li>
+      <li><%= link_to 'ブランド', class: :brand %></li> 
+    </b>  
+    </ul>  
+
+
+    <ul class='lists-right'>
+      <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
+      <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
+    </ul> 
+        
+    <div class="top">
+      <%= link_to image_tag("top.png", class: :logo), root_path %> 
+    </div>  
+      
+  </header>   
+  <%= yield %>  
+</html>
