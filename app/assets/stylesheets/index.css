@@ -93,3 +93,8 @@ a {
   text-decoration: none;
   color: #333333;
 }
+
+/*プルダウンメニューを画面上から見えないように実装する為*/
+.hidden{
+  display: none;
+}

@@ -1,7 +1,10 @@
-<link rel="stylesheet" href="simple_first.css">
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="simple_first.css">
+    <%# CSSを読み込む記述 %>
+    <script src="index.js"></script>
+    <%# JavaScriptを読み込む記述 %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simplism</title>
     <%= csrf_meta_tags %>
@@ -24,8 +27,14 @@
 
      <div class="sight_sub_name"> 
       <%= link_to "MySize ASSIST", class: :size%>
-      <li><%= link_to 'カテゴリー', class: :category %></li>
-      <li><%= link_to 'ブランド', class: :brand %></li> 
+      <%= link_to 'カテゴリー', class: :category %>
+      <ul class="category hidden" id="pull-down">
+        <li>リスト1</li>
+        <li>リスト2</li>
+        <li>リスト3</li>
+        <li>リスト4</li>
+      </ul>
+      <%= link_to 'ブランド', class: :brand %>
     </div>     
 
     <div class="top">
